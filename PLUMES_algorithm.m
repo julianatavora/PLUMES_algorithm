@@ -10,9 +10,9 @@
 %-------------------------------------------------------------------------%
 %
 % you will need: 
-% - a satellite scene masked*, 
-% - lat/lon of satellite scene, 
-% - date of scene, 
+% - a satellite scene masked* (im variable), 
+% - lat/lon of satellite scene (lat and lon variables), 
+% - date of scene (date variable), 
 % - and chosen control points (refer to Tavora et al., 2023 on how to choose control points)
 %
 % *land masked + and anything inward from the origin point of the
