@@ -13,10 +13,12 @@
 % - a satellite scene masked* (im variable), 
 % - lat/lon of satellite scene (lat and lon variables), 
 % - date of scene (date variable), 
-% - and chosen control points (refer to Tavora et al., 2023 on how to choose control points)
+% - and chosen control points** (refer to Tavora et al., 2023 on how to choose control points)
 %
 % *land masked + and anything inward from the origin point of the
 % plume masked as well, refer to examples available
+%
+% ** you will need to edit LAT/LON (rows 39 and 75)
 %
 % refer to Examples/ for application
 %
@@ -70,8 +72,7 @@ end
 %                    get samples from marine water                        %
 %-------------------------------------------------------------------------%
 
- LAT = [-32.1003 -32.3771 -32.3840];
- LON = [-51.7958 -51.8076 -51.9521];
+ LAT = [-32.1003 -32.3771 -32.3840];  LON = [-51.7958 -51.8076 -51.9521];
 
 for ii=1:size(LAT,2)
     [row(ii), column(ii)] = findClosestPixel(lon, lat, LON(ii), LAT(ii));
